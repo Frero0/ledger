@@ -1,0 +1,23 @@
+{
+  "name": "bilancio-federico-santorsola",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Federico Santorsola",
+  "scripts": {
+    "start": "node server.cjs",
+    "build": "node build.cjs",
+    "test": "node --test test/*.test.cjs"
+  },
+  "dependencies": {
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "@material-ui/core": "4.12.4",
+    "@material-ui/icons": "4.11.3",
+    "@material-ui/lab": "4.0.0-alpha.61",
+    "chart.js": "2.9.4",
+    "react-chartjs-2": "2.11.2"
+  },
+  "devDependencies": {
+    "esbuild": "0.27.1"
+  }
+}
