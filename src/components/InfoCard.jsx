@@ -1,1 +1,0 @@
-import React from 'react';export default function InfoCard(){return <p style={{fontSize:12,color:'#69737e',margin:0}}>Puoi aggiungere i movimenti a mano o dettare i dati. I movimenti iniziali sono esempi. Rimuovili per iniziare il tuo bilancio.</p>}

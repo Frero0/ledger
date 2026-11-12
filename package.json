@@ -1,23 +1,44 @@
 {
-  "name": "bilancio-federico-santorsola",
+  "name": "ledger-finance",
   "version": "1.0.0",
   "private": true,
-  "author": "Federico Santorsola",
+  "type": "module",
+  "engines": {
+    "node": ">=22.22.1"
+  },
   "scripts": {
-    "start": "node server.cjs",
-    "build": "node build.cjs",
-    "test": "node --test test/*.test.cjs"
+    "dev": "vite --host 0.0.0.0 --port 3024",
+    "start": "vite --host 0.0.0.0 --port 3024",
+    "preview": "vite preview --host 0.0.0.0 --port 3024",
+    "preview:local": "vite preview --host 0.0.0.0 --port 3024",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "build": "tsc --noEmit && vite build",
+    "test": "node scripts/test.mjs",
+    "licenses:generate": "node scripts/notices.mjs"
   },
   "dependencies": {
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "@material-ui/core": "4.12.4",
-    "@material-ui/icons": "4.11.3",
-    "@material-ui/lab": "4.0.0-alpha.61",
-    "chart.js": "2.9.4",
-    "react-chartjs-2": "2.11.2"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "lucide-react": "^0.468.0",
+    "recharts": "^3.4.1"
   },
   "devDependencies": {
-    "esbuild": "0.27.1"
+    "vite": "^8.3.8",
+    "@vitejs/plugin-react": "^6.3.0",
+    "typescript": "^5.9.3",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/node": "^22.0.0",
+    "eslint": "^10.14.0",
+    "@eslint/js": "^10.0.1",
+    "typescript-eslint": "^8.72.2",
+    "globals": "^17.0.0",
+    "vitest": "^5.1.0",
+    "playwright": "^1.58.0",
+    "prettier": "^3.10.1"
+  },
+  "overrides": {
+    "minimatch": "^11.0.1"
   }
 }
